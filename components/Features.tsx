@@ -63,7 +63,7 @@ export function Features() {
         <div className="inline-block px-3 py-1 rounded-full bg-bg-elevated border border-border text-[12px] text-fg-muted mb-4">
           Features
         </div>
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-tighter mb-4 gradient-text">
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tighter mb-4 gradient-text leading-[1.15] pb-1">
           Everything macOS should do.
           <br />
           Nothing it shouldn&apos;t.

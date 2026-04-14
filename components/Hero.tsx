@@ -20,7 +20,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-        className="text-5xl md:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6 gradient-text"
+        className="text-5xl md:text-7xl font-semibold tracking-tighter leading-[1.1] mb-6 gradient-text pb-1"
       >
         Control your displays.
         <br />
