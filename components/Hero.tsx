@@ -75,10 +75,20 @@ export function Hero() {
           aria-hidden
           className="absolute pointer-events-none"
           style={{
-            inset: "-25%",
+            inset: "-40%",
             background:
-              "radial-gradient(50% 45% at 50% 55%, rgba(10,132,255,0.6) 0%, rgba(10,132,255,0.3) 35%, rgba(10,132,255,0) 75%)",
-            filter: "blur(60px)",
+              "radial-gradient(55% 50% at 50% 55%, rgba(10,132,255,0.95) 0%, rgba(10,132,255,0.6) 25%, rgba(10,132,255,0.25) 55%, rgba(10,132,255,0) 80%)",
+            filter: "blur(80px)",
+          }}
+        />
+        <div
+          aria-hidden
+          className="absolute pointer-events-none"
+          style={{
+            inset: "-15%",
+            background:
+              "radial-gradient(45% 40% at 50% 55%, rgba(10,132,255,0.5) 0%, rgba(10,132,255,0) 70%)",
+            filter: "blur(40px)",
           }}
         />
         <Image
