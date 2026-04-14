@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0a;
+  --bg-elevated: #121215;
+  --border: #1f1f23;
+  --fg: #ffffff;
+  --fg-muted: #a1a1aa;
+  --fg-dim: #52525b;
+  --accent: #0a84ff;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-border: var(--border);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-dim: var(--fg-dim);
+  --color-accent: var(--accent);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", system-ui, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #ffffff 0%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.screenshot-glow {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 30px 80px -20px rgba(10, 132, 255, 0.25),
+    0 0 120px -10px rgba(10, 132, 255, 0.15);
+}
