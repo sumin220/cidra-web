@@ -71,16 +71,22 @@ export function Hero() {
         transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
         className="relative mx-auto max-w-[420px]"
       >
-        <div className="screenshot-glow">
-          <Image
-            src="/screenshot.png"
-            alt="Cidra menu bar panel"
-            width={716}
-            height={1122}
-            priority
-            className="w-full h-auto"
-          />
-        </div>
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 blur-3xl opacity-70 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(60% 50% at 50% 55%, rgba(10,132,255,0.55) 0%, rgba(10,132,255,0.25) 40%, rgba(10,132,255,0) 75%)",
+          }}
+        />
+        <Image
+          src="/screenshot.png"
+          alt="Cidra menu bar panel"
+          width={716}
+          height={1122}
+          priority
+          className="relative w-full h-auto"
+        />
       </motion.div>
     </section>
   );
