@@ -73,17 +73,19 @@ export function Hero() {
       >
         <div
           aria-hidden
-          className="absolute inset-0 -z-10 blur-3xl opacity-70 pointer-events-none"
+          className="absolute pointer-events-none"
           style={{
+            inset: "-25%",
             background:
-              "radial-gradient(60% 50% at 50% 55%, rgba(10,132,255,0.55) 0%, rgba(10,132,255,0.25) 40%, rgba(10,132,255,0) 75%)",
+              "radial-gradient(50% 45% at 50% 55%, rgba(10,132,255,0.6) 0%, rgba(10,132,255,0.3) 35%, rgba(10,132,255,0) 75%)",
+            filter: "blur(60px)",
           }}
         />
         <Image
           src="/screenshot.png"
           alt="Cidra menu bar panel"
-          width={716}
-          height={1122}
+          width={714}
+          height={1120}
           priority
           className="relative w-full h-auto"
         />
