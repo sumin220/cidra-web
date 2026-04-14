@@ -54,8 +54,7 @@ html, body {
 }
 
 .screenshot-glow {
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.06),
-    0 30px 80px -20px rgba(10, 132, 255, 0.25),
-    0 0 120px -10px rgba(10, 132, 255, 0.15);
+  filter:
+    drop-shadow(0 30px 60px rgba(10, 132, 255, 0.25))
+    drop-shadow(0 0 80px rgba(10, 132, 255, 0.12));
 }

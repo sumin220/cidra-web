@@ -71,12 +71,12 @@ export function Hero() {
         transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
         className="relative mx-auto max-w-[420px]"
       >
-        <div className="screenshot-glow rounded-[22px] overflow-hidden">
+        <div className="screenshot-glow">
           <Image
             src="/screenshot.png"
             alt="Cidra menu bar panel"
-            width={840}
-            height={1200}
+            width={716}
+            height={1122}
             priority
             className="w-full h-auto"
           />
