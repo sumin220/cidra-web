@@ -94,8 +94,8 @@ export function Hero() {
         <Image
           src="/screenshot.png"
           alt="Cidra menu bar panel"
-          width={714}
-          height={1120}
+          width={772}
+          height={1270}
           priority
           className="relative w-full h-auto"
         />
